@@ -17,6 +17,8 @@ License:
 	GNU General Public License v3.0
 */
 
+if (!hasInterface) exitWith {};
+
 private _playerUID = getPlayerUID player;
 
 [_playerUID] remoteExec ["cvo_economy_fnc_loadPlayerDataServer", 2];

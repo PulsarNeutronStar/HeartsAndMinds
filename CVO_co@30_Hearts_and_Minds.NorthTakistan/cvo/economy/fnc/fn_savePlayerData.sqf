@@ -10,11 +10,13 @@ Returns:
 	NONE
 
 Example:
-	[] call cvo_economy_fnc_savePlayerDataLocal;
+	[] call cvo_economy_fnc_savePlayerData;
 
 License:
 	GNU General Public License v3.0
 */
+
+if (!hasInterface) exitWith {};
 
 private _playerUID = getPlayerUID player;
 private _dataArray = [cvo_economy_player_money]
