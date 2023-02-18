@@ -1,0 +1,1 @@
+[] call cvo_economy_fnc_initServer;

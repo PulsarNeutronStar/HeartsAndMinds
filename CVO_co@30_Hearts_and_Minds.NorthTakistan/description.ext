@@ -30,6 +30,7 @@ class RscTitles {
 class CfgFunctions {
     // add your own functions below
     #include "cvo\cbrn\CfgFunctions.hpp"
+    #include "cvo\economy\CfgFunctions.hpp"
     #include "cvo\logistics\functions.hpp"
 };
 
