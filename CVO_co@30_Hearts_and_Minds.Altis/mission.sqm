@@ -16,11 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-<<<<<<< Updated upstream
 		nextID=6871;
-=======
-		nextID=6301;
->>>>>>> Stashed changes
 	};
 	class Camera
 	{
