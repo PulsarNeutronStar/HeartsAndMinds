@@ -9,6 +9,7 @@ player addEventHandler ["Respawn", {
 // Init Fast Travel for Vehicles
 execVM "cvo\FTVic\cvo_FTVic_init.sqf";
 
+execVM "cvo\cvo_zeus_debug.sqf";
 
 diag_log ("[CVO] [INIT] (cvo_initPlayerLocal.sqf) - END");
 
