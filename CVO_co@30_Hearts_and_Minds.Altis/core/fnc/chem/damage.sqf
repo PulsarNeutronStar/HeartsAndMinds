@@ -52,6 +52,7 @@ if (
             "SE_M17",
             "Hamster_PS",
             "SE_S10",
+            "gm_gc_army_facewear_schm41m",
             "MK502"
         ] findIf {_googles isKindOf [_x, _cfgGlasses]} > -1
     ) then {
