@@ -759,7 +759,7 @@ btc_type_motorized = [
 btc_type_motorized_armed = [
     "ACM_APLIF_btr60pb", 
     "ACM_APLIF_BRDM", 
-    "ACM_APLIF_BMP"
+    "ACM_APLIF_BMP",
     "ACM_APLIF_Iltis_Milan"
 ];                                                                      // _allclasse select 6;
 
