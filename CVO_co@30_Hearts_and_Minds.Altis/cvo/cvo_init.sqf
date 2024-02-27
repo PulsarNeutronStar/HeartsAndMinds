@@ -58,6 +58,8 @@ execVM "cvo\misc\cvo_jobboard.sqf";
 // Init for CVO IED's
 execVM "cvo\IED\cvo_ied_init.sqf";
 
+execVM "cvo\logistics\cvo_fnc_airlift.sqf";
+
 // Define Misc Functions
 // cvo_misc_fnc_gateAnimation = compile preprocessFile "cvo\misc\cvo_gateAnimation.sqf";
 

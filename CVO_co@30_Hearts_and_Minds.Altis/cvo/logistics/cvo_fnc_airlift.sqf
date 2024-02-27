@@ -9,12 +9,13 @@ cvo_fnc_Sling_Obj_to_Target = {
     * 1: _cargoObj     <Object>            - Object to be slung - needs to be slingloadable!
     * 2: _dropOffPos   <Object or Pos>     - Destination of the Cargo Object. Ether Pos or Object, like empty Helipad.
     * 3: _returnPos    <Object or Pos>     - Point of return for the helicopter once the cargo has been delivered. Ether Pos or Object, like empty Helipad.
+    * 4: _protected    <Bool>              - allowDamage false on Heli and crew if True <Default: True>
     *
     * Return Value:
     * none
     *
     * Example:
-    * [airlift_heli_1_grp,airlift_cargo_1, [1000,1000,0]] call cvo_fnc_Sling_Obj_to_Target;
+    * [airlift_heli_1_grp,airlift_cargo_1, DZ_1, LZ, true] call cvo_fnc_Sling_Obj_to_Target;
     *
     * Public: [Yes/No]
     */
@@ -75,7 +76,7 @@ cvo_fnc_Sling_Obj_to_Target = {
 
 
 
-    _heliObj limitSpeed 200;
+    _heliObj limitSpeed 300;
 
     private _wpPos1 = _cargoPos getPos [750, _dirCargoToHeli];
     private _wpPos2 = _cargoPos getPos [200, _dirCargoToHeli];
@@ -85,16 +86,16 @@ cvo_fnc_Sling_Obj_to_Target = {
 
     private _wp1 = _heliCrew addWaypoint [_wpPos1, -1];
     _wp1 setWaypointBehaviour "CARELESS";
-    _wp1 setWaypointStatements ["true", "vehicle this flyInHeight [50, true]; vehicle this limitSpeed 100;"];
+    _wp1 setWaypointStatements ["true", "vehicle this flyInHeight [50, true]; vehicle this limitSpeed 150;"];
     _wp1 setWaypointSpeed "FULL";
 
 
     private _wp2 = _heliCrew addWaypoint [_wpPos2, -1];
-    _wp2 setWaypointStatements ["true", "vehicle this flyInHeight [30, true]; vehicle this limitSpeed 50;"];
+    _wp2 setWaypointStatements ["true", "vehicle this flyInHeight [30, true]; vehicle this limitSpeed 100;"];
     _wp2 setWaypointSpeed "LIMITED";
 
     private _wp3 = _heliCrew addWaypoint [_wpPos3, -1];
-    _wp3 setWaypointStatements ["true", "vehicle this flyInHeight [30, false]; this limitSpeed 25;"];
+    _wp3 setWaypointStatements ["true", "vehicle this flyInHeight [30, false]; this limitSpeed 50;"];
 
 
 
@@ -105,7 +106,7 @@ cvo_fnc_Sling_Obj_to_Target = {
 
 
     private _wp5 = _heliCrew addWaypoint [_wpPos5, -1];
-    _wp5 setWaypointStatements ["true", "vehicle this flyInHeight [75, true]; vehicle this limitSpeed 200;"];
+    _wp5 setWaypointStatements ["true", "vehicle this flyInHeight [75, true]; vehicle this limitSpeed 300;"];
 
 
 
@@ -113,7 +114,7 @@ cvo_fnc_Sling_Obj_to_Target = {
     private _wp7 = _heliCrew addWaypoint [_dropOffPos, -1];
     _wp7 waypointAttachVehicle _dropOffPosObj;
     _wp7 setWaypointType "UNHOOK";
-    _wp7 setWaypointStatements ["true", "vehicle this flyInHeight [50, false]; vehicle this limitSpeed 200;"];
+    _wp7 setWaypointStatements ["true", "vehicle this flyInHeight [50, false]; vehicle this limitSpeed 300;"];
 
 
     private _wp8 = _heliCrew addWaypoint [_returnPos, -1];
