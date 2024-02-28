@@ -29,15 +29,17 @@ cvo_fnc_airlift = {
 		[ "_cargoObj",		objNull,	   [objNull]			   ],
 		[ "_dropOffPos","UNDEFINED",	   [objNull,[]],	  [2,3]],
 		[ "_returnPos",	"UNDEFINED",	   [objNull,[]],	  [2,3]],
-		[ "_direction",	  "AUTO",	   [0]					 ],
-		[ "_protected",		true,	   [false]				 ],
-		[ "_unlock",		false,	   [false]				 ]
+		[ "_direction",      "AUTO",	   [0]					 ],
+		[ "_protected",		   true,	   [false]				 ],
+		[ "_unlock",		  false,	   [false]				 ]
 	];
 
 	// Input Sanitization
 	if (_heliCrew isEqualTo grpNull) exitWith {};
 	if (_cargoObj isEqualTo objNull) exitWith {};
 	if (_dropOffPos isEqualTo "UNDEFINED") exitWith {};
+
+
 
 	//Check if target can be airlifted
     private _helperNeeded = false;
@@ -211,4 +213,17 @@ cvo_fnc_airlift = {
 } forEach [airlift_cargo_2];
 
 
+/*
+_cargoObj = cursorObject;
+_helperObj = createVehicle ["Land_CargoBox_V1_F", [0,0,0]];
+_helperObj allowDamage false;
+//_helperObj hideObjectGlobal true;
+_helperObj disableCollisionWith _cargoObj;
 
+_offset = getCenterOfMass _cargoObj;
+
+_helperObj setPos getPos _cargoObj;
+
+_offset = _cargoObj get
+_cargoObj attachTo [_helperObj, _offset];
+*/
