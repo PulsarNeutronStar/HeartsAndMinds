@@ -523,7 +523,13 @@ CVO_A_BASE append [
 	"gm_suppressor_tgpp_9mm_blk",
 	"gm_30Rnd_762x39mm_B_57N231_ak47_blk",
 	"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk",
-	"gm_30Rnd_762x39mm_BSD_57N231U_ak47_blk"
+	"gm_30Rnd_762x39mm_BSD_57N231U_ak47_blk",
+	"gm_surefire_l60_wht_hoseclamp_blk",
+	"gm_surefire_l60_ir_hoseclamp_blk",
+	"gm_surefire_l60_red_hoseclamp_blk",
+	"gm_surefire_l72_grn_hoseclamp_blk",
+	"gm_surefire_l72_red_hoseclamp_blk",
+	"gm_surefire_l75_ir_hoseclamp_blk"
 	];
 
 
@@ -637,8 +643,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 			"gm_feroz51_pzf84_oli",
 			"gm_feroz2x17_pzf84_blk",
 			"gm_1Rnd_44x537mm_heat_dm32_pzf44_2",
-			"gm_1Rnd_84x245mm_heat_t_DM12a1_carlgustaf",
-			"gm_1Rnd_84x245mm_heat_t_DM22_carlgustaf",
 			"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf",
 			"gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf",
 			"gm_rpg7_wud",
@@ -689,7 +693,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - Banana Given"; 	["ACE_Banana"]}		]	],	
 	["76561197970306509", 	["Zorn", 			[	"gm_pl_headgear_beret_blu",	"gm_ge_headgear_beret_un", "G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk", "gm_flashlightp2_brk_akkhandguard_dino"],	{[]}	]],
-	["76561198090236234", 	["Recon", 			[	"gm_flashlightp2_brk_akkhandguard_dino"				 ],	{[]}	]],
+	["76561198090236234", 	["Recon", 			[	"gm_flashlightp2_brk_akkhandguard_dino",		"gm_rv_ris_blk",	"gm_hk512_ris_wud"			 ],	{[]}	]],
 	["76561198147307775", 	["Clone", 			[	"gm_pl_headgear_beret_blu",	"gm_ge_headgear_beret_un"],	{[]}	]] 	
 ];
 
