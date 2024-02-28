@@ -189,7 +189,7 @@ cvo_fnc_airlift = {
 		false																	// Show in unconscious state
 	] remoteExec ["BIS_fnc_holdActionAdd", 0, _x];								// MP-compatible implementation
    
-} forEach [ [airlift_cargo_1, DZ_1, LZ], [airlift_cargo_2, DZ_2, LZ] ];
+} forEach [ [missile_launcher_1, DZ_1, LZ], [missile_launcher_2, DZ_2, LZ] ];
 
 
 
