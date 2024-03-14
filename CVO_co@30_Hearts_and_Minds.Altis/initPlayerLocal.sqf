@@ -28,7 +28,7 @@ if (missionNamespace getVariable ['cvo_al_cond_1', true]) then {
         0,																		// Priority
         true,																	// Remove on completion
         false																	// Show in unconscious state
-    ] call "BIS_fnc_holdActionAdd";      
+    ] call BIS_fnc_holdActionAdd;      
 };
 
 if (missionNamespace getVariable ['cvo_al_cond_2', true]) then {
@@ -51,5 +51,5 @@ if (missionNamespace getVariable ['cvo_al_cond_2', true]) then {
         0,																		// Priority
         true,																	// Remove on completion
         false																	// Show in unconscious state
-    ] call "BIS_fnc_holdActionAdd";      
+    ] call BIS_fnc_holdActionAdd;      
 };
