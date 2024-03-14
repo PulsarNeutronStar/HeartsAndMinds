@@ -29,6 +29,6 @@
 		0,																		// Priority
 		true,																	// Remove on completion
 		false																	// Show in unconscious state
-	] remoteExec ["BIS_fnc_holdActionAdd", 0, _x#0];							// MP-compatible implementation
+	] call "BIS_fnc_holdActionAdd";                 							// MP-compatible implementation
    
 } forEach [ [missile_launcher_1, DZ_1, LZ, airlift_heli_1_grp], [missile_launcher_2, DZ_2, LZ, airlift_heli_1_grp] ];
