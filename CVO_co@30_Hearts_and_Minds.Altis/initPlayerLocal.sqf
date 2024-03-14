@@ -14,8 +14,8 @@ if (missionNamespace getVariable ['cvo_al_cond_1', true]) then {
         "<t color='#ff0000'>Request Airlift for this Vehicle</t>",				// Title of the action
         "\a3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa",			// Idle icon shown on screen
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",			// Progress icon shown on screen
-        "cvo_al_cond_1 && (_this distance _target < 10 ) ",											// Condition for the action to be shown
-        "_caller distance _target < 10",										// Condition for the action to progress
+        "cvo_al_cond_1 && (_this distance _target < 10 )",											// Condition for the action to be shown
+        "cvo_al_cond_1 && (_this distance _target < 10 )",						// Condition for the action to progress
         {},																		// Code executed when action starts
         {},																		// Code executed on every progress tick
         { 
@@ -37,8 +37,8 @@ if (missionNamespace getVariable ['cvo_al_cond_2', true]) then {
         "<t color='#ff0000'>Request Airlift for this Vehicle</t>",				// Title of the action
         "\a3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa",			// Idle icon shown on screen
         "\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",			// Progress icon shown on screen
-        "cvo_al_cond_2 && ( _this distance _target < 10 )",											// Condition for the action to be shown
-        "_caller distance _target < 10",										// Condition for the action to progress
+        "cvo_al_cond_2 && ( _this distance _target < 10 )",						// Condition for the action to be shown
+        "cvo_al_cond_2 && ( _this distance _target < 10 )", 					// Condition for the action to progress
         {},																		// Code executed when action starts
         {},																		// Code executed on every progress tick
         { 
