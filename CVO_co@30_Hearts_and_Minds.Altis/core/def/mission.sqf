@@ -776,7 +776,7 @@ btc_type_gl = ["gm_gc_army_spg9_tripod"];                               // _allc
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];
 switch (_p_en) do {
     /*case "Myfactionexemple" : {
-        btc_type_units = btc_type_units - ["Blabla","moreBlabla"];
+        btc_type_units = btc_type_units - ["Blabla","m```oreBlabla"];
         btc_type_divers = btc_type_divers + ["Blabla","moreBlabla"];
         btc_type_crewmen = "Blabla";
         btc_type_boats = btc_type_boats;

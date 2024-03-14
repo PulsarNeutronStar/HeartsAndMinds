@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=24427;
+		nextID=24428;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=14335;
+		nextID=14764;
 	};
 	class Camera
 	{
-		pos[]={15486.526,79.52317,15889.003};
-		dir[]={-0.44737685,-0.48314971,0.75261497};
-		up[]={-0.24687527,0.87553692,0.41531482};
-		aside[]={0.85960245,2.7613714e-007,0.5109728};
+		pos[]={15223.945,20.496819,17325.738};
+		dir[]={0.46293297,-0.43588716,0.77183819};
+		up[]={0.22420576,0.89999664,0.37381297};
+		aside[]={0.85759312,-2.8690556e-007,-0.51436555};
 	};
 };
 binarizationWanted=0;
@@ -20459,7 +20459,7 @@ class Mission
 					};
 					id=2516;
 					type="Land_Rope_01_F";
-					atlOffset=0.99277401;
+					atlOffset=0.96792698;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -83044,6 +83044,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Road";
+							state=1;
 							class Entities
 							{
 								items=13;
@@ -83632,6 +83633,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Exterior Lighting";
+							state=1;
 							class Entities
 							{
 								items=12;
@@ -83844,6 +83846,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Armory Decor";
+							state=1;
 							class Entities
 							{
 								items=160;
@@ -91713,6 +91716,7 @@ class Mission
 						{
 							dataType="Layer";
 							name="Office Decor";
+							state=1;
 							class Entities
 							{
 								items=121;
@@ -97049,10 +97053,11 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={15207.077,19.529737,17343.721};
-										angles[]={0.00068526965,4.6104259,7.1680173e-005};
+										position[]={15210.337,19.529779,17335.434};
+										angles[]={0.0002443461,5.9147811,6.2825398};
 									};
 									side="Empty";
+									flags=4;
 									class Attributes
 									{
 										createAsSimpleObject=1;
@@ -97061,56 +97066,7 @@ class Mission
 									};
 									id=19494;
 									type="MapBoard_Malden_F";
-									atlOffset=0.60758781;
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ObjectInterior";
-											expression="_this enableAudioFeature ['building_interior', _value];";
-											class Value
-											{
-												class data
-												{
-													singleType="BOOL";
-													value=1;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="allowDamage";
-											expression="_this allowdamage _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="BOOL";
-													value=0;
-												};
-											};
-										};
-										nAttributes=2;
-									};
-								};
-								class Item115
-								{
-									dataType="Object";
-									class PositionInfo
-									{
-										position[]={15209.289,19.528482,17323.832};
-										angles[]={0.00068067841,4.7232099,0};
-									};
-									side="Empty";
-									class Attributes
-									{
-										createAsSimpleObject=1;
-										createAsLocalObject=1;
-										disableSimulation=1;
-									};
-									id=19493;
-									type="Land_WhiteBoard_vanila_F";
-									atlOffset=0.59400177;
+									atlOffset=0.0020618439;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -97128,34 +97084,34 @@ class Mission
 										};
 										class Attribute1
 										{
-											property="ObjectInterior";
-											expression="_this enableAudioFeature ['building_interior', _value];";
-											class Value
-											{
-												class data
-												{
-													singleType="BOOL";
-													value=1;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="SwitchTexture";
-											expression="_this setObjectTextureGlobal [0, _value]";
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
 											class Value
 											{
 												class data
 												{
 													singleType="STRING";
-													value="\A3\missions_f_epa\data\img\whiteboards\whiteboard_briefing_A_m05_CO.paa";
+													value="cvo\img\lunatargetside.paa";
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ObjectInterior";
+											expression="_this enableAudioFeature ['building_interior', _value];";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
 										nAttributes=3;
 									};
 								};
-								class Item116
+								class Item115
 								{
 									dataType="Object";
 									class PositionInfo
@@ -97216,7 +97172,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item117
+								class Item116
 								{
 									dataType="Object";
 									class PositionInfo
@@ -97278,7 +97234,7 @@ class Mission
 										nAttributes=3;
 									};
 								};
-								class Item118
+								class Item117
 								{
 									dataType="Object";
 									class PositionInfo
@@ -97314,7 +97270,7 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item119
+								class Item118
 								{
 									dataType="Object";
 									class PositionInfo
@@ -97347,7 +97303,7 @@ class Mission
 										nAttributes=1;
 									};
 								};
-								class Item120
+								class Item119
 								{
 									dataType="Object";
 									class PositionInfo
@@ -97363,14 +97319,77 @@ class Mission
 									type="GalleryFrame_01_large_portrait_F";
 									atlOffset=0.82491684;
 								};
+								class Item120
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={15208.465,19.529123,17333.516};
+										angles[]={0.00055850536,5.3311253,6.2827835};
+									};
+									side="Empty";
+									class Attributes
+									{
+										createAsSimpleObject=1;
+										createAsLocalObject=1;
+										disableSimulation=1;
+									};
+									id=24427;
+									type="MapBoard_Malden_F";
+									atlOffset=0.60499954;
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="ObjectTextureCustom0";
+											expression="_this setObjectTextureGlobal [0,_value]";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="cvo\img\lunatargetfront.paa";
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ObjectInterior";
+											expression="_this enableAudioFeature ['building_interior', _value];";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=3;
+									};
+								};
 							};
 							id=21561;
-							atlOffset=0.78517532;
+							atlOffset=0.39579201;
 						};
 						class Item4
 						{
 							dataType="Layer";
 							name="Base Med Closet";
+							state=1;
 							class Entities
 							{
 								items=55;
@@ -100025,7 +100044,7 @@ class Mission
 						};
 					};
 					id=19477;
-					atlOffset=1.0661526;
+					atlOffset=0.97083092;
 				};
 				class Item1
 				{
@@ -101452,6 +101471,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Gravia Base Vehicles";
+					state=1;
 					class Entities
 					{
 						items=13;
@@ -104983,6 +105003,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Hospital Vehicles";
+					state=1;
 					class Entities
 					{
 						items=7;
@@ -105463,6 +105484,7 @@ class Mission
 				{
 					dataType="Layer";
 					name="Office Lights";
+					state=1;
 					class Entities
 					{
 						items=17;
@@ -106539,7 +106561,7 @@ class Mission
 				};
 			};
 			id=19476;
-			atlOffset=0.54308319;
+			atlOffset=0.54265213;
 		};
 		class Item43
 		{
@@ -108940,7 +108962,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17828.371,-0.94391388,18081.605};
+								position[]={17828.371,-0.94391376,18081.605};
 								angles[]={0,0,6.2498641};
 							};
 							side="Empty";
@@ -108952,7 +108974,7 @@ class Mission
 							};
 							id=19715;
 							type="Land_ShellCrater_02_large_F";
-							atlOffset=0.021502495;
+							atlOffset=0.021502614;
 						};
 						class Item1
 						{
@@ -108973,7 +108995,7 @@ class Mission
 						};
 					};
 					id=19717;
-					atlOffset=0.63280421;
+					atlOffset=0.63280433;
 				};
 				class Item17
 				{
@@ -108987,7 +109009,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={17831.461,-0.19921947,18102.418};
+								position[]={17831.461,-0.19921935,18102.418};
 								angles[]={0,0,6.2498641};
 							};
 							side="Empty";
@@ -108999,7 +109021,7 @@ class Mission
 							};
 							id=19718;
 							type="Land_ShellCrater_02_large_F";
-							atlOffset=0.00011777878;
+							atlOffset=0.00011789799;
 						};
 						class Item1
 						{
@@ -127125,7 +127147,7 @@ class Mission
 			};
 			title="Weapons Storage, Looted";
 			id=22825;
-			atlOffset=0.1735878;
+			atlOffset=0.7087841;
 		};
 		class Item57
 		{
@@ -130817,7 +130839,7 @@ class Mission
 							};
 							id=22984;
 							type="Land_Rope_01_F";
-							atlOffset=0.97788715;
+							atlOffset=0.95303631;
 						};
 						class Item6
 						{
@@ -149430,8 +149452,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="gm_vehicleMarkings_LicensePlates_Numbers_attribute";
-							expression="[_this,_value,0,1] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+							property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+							expression="[_this,_value,0,0] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 							class Value
 							{
 								class data
@@ -149443,8 +149465,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-							expression="[_this,_value,0,0] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+							property="gm_vehicleMarkings_LicensePlates_Numbers_attribute";
+							expression="[_this,_value,0,1] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 							class Value
 							{
 								class data
@@ -149479,8 +149501,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="gm_vehicleMarkings_LicensePlates_Numbers_attribute";
-							expression="[_this,_value,0,1] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+							property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+							expression="[_this,_value,0,0] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 							class Value
 							{
 								class data
@@ -149492,8 +149514,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-							expression="[_this,_value,0,0] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+							property="gm_vehicleMarkings_LicensePlates_Numbers_attribute";
+							expression="[_this,_value,0,1] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 							class Value
 							{
 								class data
@@ -149527,8 +149549,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="gm_vehicleMarkings_LicensePlates_Numbers_attribute";
-							expression="[_this,_value,0,1] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+							property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
+							expression="[_this,_value,0,0] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 							class Value
 							{
 								class data
@@ -149540,8 +149562,8 @@ class Mission
 						};
 						class Attribute1
 						{
-							property="gm_vehicleMarkings_LicensePlates_Plate_attribute";
-							expression="[_this,_value,0,0] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
+							property="gm_vehicleMarkings_LicensePlates_Numbers_attribute";
+							expression="[_this,_value,0,1] call gm_core_vehicles_fnc_vehicleMarkingsUpdateAttributes;";
 							class Value
 							{
 								class data
