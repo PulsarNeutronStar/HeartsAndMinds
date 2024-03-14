@@ -170,28 +170,6 @@ cvo_fnc_airlift = {
 /////////////////////////////////////////////////////////////
 // adds the action to every client and JIP, but also adds it when it was already removed. E.g., Laptop has already been hacked by a player
 
-{
-	[
-		_x#0,																	// Object the action is attached to
-		"<t color='#ff0000'>Request Airlift for this Vehicle</t>",				// Title of the action
-		"\a3\ui_f\data\igui\cfg\simpleTasks\types\container_ca.paa",			// Idle icon shown on screen
-		"\a3\ui_f\data\IGUI\Cfg\holdactions\holdAction_connect_ca.paa",			// Progress icon shown on screen
-		"_this distance _target < 10",											// Condition for the action to be shown
-		"_caller distance _target < 10",										// Condition for the action to progress
-		{},																		// Code executed when action starts
-		{},																		// Code executed on every progress tick
-		{ [_this#3#2, _this#0 , _this#3#0, _this#3#1] call cvo_fnc_airlift; },			// Code executed on completion
-		{},																		// Code executed on interrupted
-		[_x#1,_x#2, _x#3],															// Arguments passed to the scripts as _this # 3
-		6,																		// Action duration in seconds
-		0,																		// Priority
-		true,																	// Remove on completion
-		false																	// Show in unconscious state
-	] remoteExec ["BIS_fnc_holdActionAdd", 0, _x#0];							// MP-compatible implementation
-   
-} forEach [ [missile_launcher_1, DZ_1, LZ, airlift_heli_1_grp], [missile_launcher_2, DZ_2, LZ, airlift_heli_1_grp] ];
-
-
 
 
 /*
