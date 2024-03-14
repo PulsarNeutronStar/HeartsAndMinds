@@ -25,3 +25,10 @@ TOV_fnc_SimpleConvoy = {
         {(vehicle _x) setConvoySeparation _convoySeparation;} forEach (units _convoyGroup);
 	}; 
 };
+
+if (isServer) then {
+	cvo_al_cond_1 = true;
+	cvo_al_cond_2 = true;
+	publicVariable "cvo_al_cond_1";
+	publicVariable "cvo_al_cond_2";
+};
