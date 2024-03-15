@@ -3,7 +3,7 @@
 [compileScript ["cvo\cvo_initPlayerLocal.sqf"]] call CBA_fnc_directCall;
 
 
-[] execVM "cvo\logistics\cvo_fnc_airlift.sqf";
+
 
 waitUntil { time > 1; };
 

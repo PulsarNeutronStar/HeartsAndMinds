@@ -32,3 +32,5 @@ if (isServer) then {
 	publicVariable "cvo_al_cond_1";
 	publicVariable "cvo_al_cond_2";
 };
+
+[] execVM "cvo\logistics\cvo_fnc_airlift.sqf";
