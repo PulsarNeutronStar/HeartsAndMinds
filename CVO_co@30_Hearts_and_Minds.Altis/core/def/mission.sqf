@@ -723,27 +723,23 @@ diag_log ("_allclasse = " + str _allclasse);
 btc_enemy_side = east;                                                   // _allclasse select 0;
 
 btc_type_units = [
-//  "gm_xx_army_antitank_hk53a2_rpg7_80_oli",                           // RPG Guy for later
-    "gm_xx_army_demolition_mp2a1_80_blk",
-    "gm_xx_army_machinegunner_rpk_80_oli",
-    "gm_xx_army_marksman_svd_80_wdl",
-    "gm_xx_army_medic_01_mpikms72_m84",
-    "gm_xx_army_engineer_hk33a2_80_brn",
-    "gm_xx_army_rifleman_01_akm_alp",
-    "gm_xx_army_assault_ak74nk_80_wdl",
-    "gm_xx_army_squadleader_m16a1_80_grn",
-    "APLIF_Soldier_TL", 
-    "APLIF_soldier_lite", 
+    "APLIF_Soldier_AR_Heavy", 
+    "APLIF_Medic", 
     "APLIF_Soldier_AR", 
-    "APLIF_Soldier_AT_Lite"
+    "APLIF_Soldier_M", 
+    "APLIF_Officer", 
+    "APLIF_soldier", 
+    "APLIF_Soldier_AT_Lite", 
+    "APLIF_soldier_lite", 
+    "APLIF_Soldier_SL", 
+    "APLIF_Soldier_TL", 
+    "APLIF_soldier_AT"
 ]; // _allclasse select 1;
 
-btc_type_divers = ["gm_xx_army_rifleman_01_akm_alp"];                                                   // _allclasse select 2;
+btc_type_divers = ["APLIF_Spec_TL"];                                                   // _allclasse select 2;
 
 btc_type_crewmen = selectRandom [
-    "gm_xx_army_squadleader_m16a1_80_grn", 
-    "gm_xx_army_assault_ak74nk_80_wdl", 
-    "gm_xx_army_rifleman_01_akm_alp"
+"APLIF_Crew"
 ];// _allclasse select 3;
 
 btc_type_boats =  [
@@ -753,29 +749,21 @@ btc_type_boats =  [
     "C_Scooter_Transport_01_F"
 ];                                                   // _allclasse select 4;
 btc_type_motorized = [
-    "gm_ge_civ_typ251", 
-    "gm_ge_civ_typ253", 
-    "gm_ge_civ_typ1200", 
-    "gm_ge_civ_w123", 
-    "gm_gc_civ_ural375d_cargo", 
-    "gm_gc_civ_p601", 
-    "gm_ge_civ_typ247",
-    "ACM_APLIF_Iltis", 
-    "ACM_APLIF_Motorbike" 
+"ACM_APLIF_Motorbike", 
+"ACM_APLIF_Iltis", 
+"ACM_APLIF_TruckCargo", 
+"ACM_APLIF_btr60pu", 
+"ACM_APLIF_BTR60pa"
 ];                                                                      // _allclasse select 5;
 
 btc_type_motorized_armed = [
-    "gm_ge_civ_typ251", 
-    "gm_ge_civ_typ253", 
-    "gm_ge_civ_typ1200", 
-    "gm_ge_civ_w123", 
-    "gm_gc_civ_ural375d_cargo", 
-    "gm_gc_civ_p601", 
-    "gm_ge_civ_typ247",
+    "ACM_APLIF_btr60pb", 
+    "ACM_APLIF_BRDM", 
+    "ACM_APLIF_BMP",
     "ACM_APLIF_Iltis_Milan"
 ];                                                                      // _allclasse select 6;
 
-btc_type_mg = ["gm_gc_army_dshkm_aatripod"];                            // _allclasse select 7;
+btc_type_mg = ["ACM_APLIF_50Cal_High"];                            // _allclasse select 7;
 btc_type_gl = ["gm_gc_army_spg9_tripod"];                               // _allclasse select 8;
 
 
@@ -788,7 +776,7 @@ btc_type_gl = ["gm_gc_army_spg9_tripod"];                               // _allc
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];
 switch (_p_en) do {
     /*case "Myfactionexemple" : {
-        btc_type_units = btc_type_units - ["Blabla","moreBlabla"];
+        btc_type_units = btc_type_units - ["Blabla","m```oreBlabla"];
         btc_type_divers = btc_type_divers + ["Blabla","moreBlabla"];
         btc_type_crewmen = "Blabla";
         btc_type_boats = btc_type_boats;

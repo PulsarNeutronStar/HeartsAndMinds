@@ -221,9 +221,9 @@ CVO_A_BASE append [
 	"V_TacVest_blk_POLICE",
 	"ACM_APD_Vest",
 	"V_LegStrapBag_black_F",
-	//unlock later
-	//"V_SmershVest_01_black_F",				
-	//"V_SmershVest_01_radio_black_F",
+	//unlock later - done
+	"V_SmershVest_01_black_F",				
+	"V_SmershVest_01_radio_black_F",
 	"V_CarrierRigKBT_01_light_DarkOlive_F",
 	"V_CarrierRigKBT_01_DarkOlive_F"];
 
@@ -276,10 +276,6 @@ CVO_A_BASE append  [
 	"gm_mp5a3_surefire_blk",
 	"gm_mp5a3_blk",
 	"gm_mp5a2_blk",
-	"gm_60Rnd_9x19mm_B_DM51_mp5a3_blk",
-	"gm_60Rnd_9x19mm_B_DM11_mp5a3_blk",
-	"gm_60Rnd_9x19mm_BSD_DM81_mp5a3_blk",
-	"gm_60Rnd_9x19mm_AP_DM91_mp5a3_blk",
 	"gm_30Rnd_9x19mm_B_DM51_mp5a3_blk",
 	"gm_30Rnd_9x19mm_B_DM11_mp5a3_blk",
 	"gm_30Rnd_9x19mm_BSD_DM81_mp5a3_blk",
@@ -318,7 +314,6 @@ CVO_A_BASE append [
 	//"gm_pm63_handgun_blk",
 	//"gm_15Rnd_9x18mm_B_pst_pm63_blk",
 	//"gm_25Rnd_9x18mm_B_pst_pm63_blk",
-
 	"gm_lp1_blk",
 	"gm_1Rnd_265mm_smoke_single_vlt_DM24",
 	"gm_1Rnd_265mm_smoke_single_org_DM22",
@@ -434,9 +429,7 @@ CVO_A_BASE append [		// M16A1 Kit
 ];
 
 CVO_A_BASE append [		// ASAS Upgrade Kit
-	"gm_suppressor_atec150_762mm_blk",         // G3/33 Accessories
-	"gm_diavari_da_stanagClaw_oli",
-	"gm_diavari_da_stanagClaw_blk",
+	"gm_suppressor_atec150_762mm_blk",       // G3/33 Accessories
 	"gm_colt4x20_stanagClaw_blk",
 	"gm_suppressor_atec150_762mm_long_blk",
 	"gm_suppressor_atec150_556mm_long_blk",
@@ -459,39 +452,11 @@ CVO_A_BASE append [		// ASAS Upgrade Kit
 	"gm_20Rnd_762x51mm_B_T_DM21A2_g3_blk",
 	"gm_10Rnd_762x51mm_AP_DM151_g3_blk",   
 	"gm_10Rnd_762x51mm_B_T_DM21A2_g3_blk",
-
-	"gm_rpkn_wud",							//RPK/N
-	"gm_rpk_wud",
-
 	"gm_zln1k_ir_dovetail_gry",				//RPK Accs
 	"gm_zln1k_ir_dovetail_blk",
 	"gm_pka_dovetail_gry",
-	"gm_pka_dovetail_blk",
-	"gm_zvn64_rpk",
+	"gm_pka_dovetail_blk",	
 	"gm_suppressor_pbs1_762mm_blk",
-
-	"gm_75Rnd_762x39mm_AP_7N23_ak47_blk",  //RPK 75rnd drums
-	"gm_75Rnd_762x39mm_BSD_57N231U_ak47_blk",
-	"gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk",
-	"gm_75Rnd_762x39mm_B_57N231_ak47_blk",
-
-	"gm_svd_wud",							//SVD
-	
-	"gm_suppressor_tgpv_762mm_blk",			//SVD Accs
-	"gm_nspu_dovetail_gry",
-	"gm_nspu_dovetail_blk",
-	"gm_pso6x36_1_dovetail_gry",
-	"gm_pso6x36_1_dovetail_blk",
-	"gm_pso1_dovetail_gry",
-	"gm_pso1_dovetail_blk",
-
-	"gm_10Rnd_762x54mmR_B_T_7t2_svd_blk",  //SVD Ammo
-	"gm_10Rnd_762x54mmR_API_7bz3_svd_blk",
-	"gm_10Rnd_762x54mmR_AP_7N1_svd_blk",
-
-	"gm_pzf44_2_oli",					//PzF44-2 and accessories
-	"gm_feroz2x17_pzf44_2_blk",
-	"gm_1Rnd_44x537mm_heat_dm32_pzf44_2",
 
 	"gm_handgrenade_frag_dm51a1",   //New grenades, explosive and smoke
 	"gm_smokeshell_grn_dm21",
@@ -503,24 +468,70 @@ CVO_A_BASE append [		// ASAS Upgrade Kit
 	"ACRE_PRC343"					//AN-PRC 343 Short range radio
 ];
 // Lategame Uniforms and Wear
-/*
 CVO_A_BASE append [
-
+	//uniforms
 	"eou_gorka_1",
-
 	"U_O_R_Gorka_01_black_F",
-
 	"U_B_GEN_Commander_F",
-
 	"gm_ge_uniform_pilot_commando_rolled_blk",
 	"gm_ge_uniform_pilot_commando_blk",
 	"gm_ge_uniform_pilot_commando_rolled_gry",
-	"gm_ge_uniform_pilot_commando_gry"
-
+	"gm_ge_uniform_pilot_commando_gry",
+	//hats and masks
 	"gm_ge_facewear_stormhood_dustglasses_blk",
-	"gm_ge_facewear_stormhood_blk"	
+	"gm_ge_facewear_stormhood_blk",
+	"H_Watchcap_black_hsless",
+	"H_Watchcap_blu_hsless",
+	"H_Watchcap_blue2_hsless",
+	"H_Watchcap_blueblack_hsless",
+	"H_Watchcap_drkgrey_hsless",
+	"H_Watchcap_grey_hsless",
+	"H_Watchcap_greyblack_hsless",
+	"H_Watchcap_greyblue_hsless",
+	"H_Booniehat_black",
+	"H_Booniehat_blue",
+	"H_Booniehat_grey",
+	//vests
+	"gm_ge_vest_sov_armor_80_blk",
+	"gm_ge_vest_sov_80_blk",
+	//Weapons
+	"gm_mpm85_blk",
+	"gm_akmn_wud",
+	"gm_akmsn_wud",
+	"gm_m16a1_blk",
+	"gm_m16a2_blk",
+	"gm_mp5sd6_blk",
+	"gm_mp5sd5_blk",
+	//accessories
+	"gm_suppressor_pbs4_545mm_blk",
+	"gm_streamlight_sl20_stanaghk_blk",
+	"gm_streamlight_sl20_stanaghk_brn",
+	"gm_blits_stanagHK_blk",
+	"gm_feroz24_stanagHK_blk",
+	"gm_ls45_ir_stanaghk_blk",
+	"gm_ls45_red_stanaghk_blk",
+	"gm_maglite_3d_stanaghk_blk",
+	"gm_rv_stanagHK_blk",
+	"gm_rv_stanagClaw_blk",
+	"gm_rv_stanagClaw_oli",
+	"gm_ls45_ir_stanagClaw_blk",
+	"gm_ls45_ir_stanagClaw_oli",
+	"gm_suppressor_hknavy_9mm_gry",
+	"gm_suppressor_kacnavy_9mm_blk",
+	"gm_suppressor_kacnavyk_9mm_blk",
+	"gm_suppressor_kacnavysd_9mm_blk",
+	"gm_suppressor_tgpp_9mm_blk",
+	"gm_30Rnd_762x39mm_B_57N231_ak47_blk",
+	"gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk",
+	"gm_30Rnd_762x39mm_BSD_57N231U_ak47_blk",
+	"gm_surefire_l60_wht_hoseclamp_blk",
+	"gm_surefire_l60_ir_hoseclamp_blk",
+	"gm_surefire_l60_red_hoseclamp_blk",
+	"gm_surefire_l72_grn_hoseclamp_blk",
+	"gm_surefire_l72_red_hoseclamp_blk",
+	"gm_surefire_l75_ir_hoseclamp_blk"
 	];
-*/
+
 
 
 
@@ -582,9 +593,94 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"gm_ge_headgear_psh77_up_oli",				"gm_ge_headgear_psh77_down_oli"], 
 		{}]],
 	["Officer", [
-		["H_Beret_blk",	"gm_ge_headgear_beret_blk", "ACRE_PRC148"],
+		["gm_akm_pallad_wud",
+		"H_Beret_blk",
+		"gm_ge_headgear_beret_blk",
+		"ACRE_PRC148",
+		"gm_m72a3_oli",
+		"gm_hk69a1_blk",
+		"1Rnd_HE_Grenade_shell",
+		"ACE_40mm_Flare_white",
+		"ACE_40mm_Flare_green",
+		"ACE_40mm_Flare_red",
+		"ACE_40mm_Flare_ir",
+		"1Rnd_SmokeBlue_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
+		"1Rnd_SmokeOrange_Grenade_shell",
+		"1Rnd_SmokePurple_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"1Rnd_Smoke_Grenade_shell",
+		"1Rnd_SmokeYellow_Grenade_shell"],
 		{}	
-	]] 
+	]],
+	["Marksman", [
+		["gm_nspu_dovetail_gry",
+		"gm_nspu_dovetail_blk",
+		"gm_pso6x36_1_dovetail_gry",
+		"gm_pso6x36_1_dovetail_blk",
+		"gm_pso1_dovetail_gry",
+		"gm_pso1_dovetail_blk",
+		"gm_svd_wud",
+		"gm_diavari_da_stanagClaw_oli",
+		"gm_diavari_da_stanagClaw_blk",
+		"gm_suppressor_tgpv_762mm_blk",
+		"gm_10Rnd_762x54mmR_B_T_7t2_svd_blk",
+		"gm_10Rnd_762x54mmR_API_7bz3_svd_blk",
+		"gm_10Rnd_762x54mmR_AP_7N1_svd_blk",
+		"gm_g3sg1_blk",
+		"gm_hk33sg1_blk",
+		"gm_zf10x42_stanagClaw_blk",
+		"gm_zf10x42_stanagClaw_oli",
+		"gm_feroz51_stanagClaw_oli"
+		],
+		{}	
+	]], 
+	["Anti-Tank", [
+		[
+			"gm_pzf84_oli",
+			"gm_pzf44_2_oli",					
+			"gm_feroz2x17_pzf44_2_blk",
+			"gm_feroz51_pzf84_oli",
+			"gm_feroz2x17_pzf84_blk",
+			"gm_1Rnd_44x537mm_heat_dm32_pzf44_2",
+			"gm_1Rnd_84x245mm_heat_t_DM32_carlgustaf",
+			"gm_1Rnd_84x245mm_ILLUM_DM16_carlgustaf",
+			"gm_rpg7_wud",
+			"gm_pgo7v_blk",
+			"gm_1Rnd_40mm_heat_pg7v_rpg7",
+			"gm_1Rnd_40mm_heat_pg7vl_rpg7",
+			"gm_feroz51_pzf44_2_oli"
+		],
+		{}	
+	]],
+	["Machinegunner", [
+		[
+		"gm_rpkn_wud",
+		"gm_rpk_wud",
+		"gm_zvn64_rpk",
+		"gm_lmgk500s_blk",
+		"gm_lmgk500s_prp",
+		"gm_lmgk500s_brn",
+		"gm_rpk74n_wud",
+		"gm_rpk74n_brn",
+		"gm_rpk74n_blk",
+		"gm_rpk74n_prp",
+		"gm_mg8a2_blk",
+		"gm_g8_bipod_blk",
+		"gm_75Rnd_762x39mm_AP_7N23_ak47_blk",
+		"gm_75Rnd_762x39mm_BSD_57N231U_ak47_blk",
+		"gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk",
+		"gm_75Rnd_762x39mm_B_57N231_ak47_blk",
+		"gm_45Rnd_545x39mm_B_T_7T3_ak74_blk",
+		"gm_45Rnd_545x39mm_B_T_7T3_ak74_prp",
+		"gm_45Rnd_545x39mm_B_T_7T3_ak74_org",
+		"gm_45Rnd_545x39mm_B_7N6_ak74_blk",
+		"gm_45Rnd_545x39mm_B_7N6_ak74_prp",
+		"gm_45Rnd_545x39mm_B_7N6_ak74_org",
+		"gm_100Rnd_762x51mm_B_T_DM21A2_mg8_oli"
+		],
+		{}	
+	]]
 ];
 
 // #####################################################
@@ -597,7 +693,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - Banana Given"; 	["ACE_Banana"]}		]	],	
 	["76561197970306509", 	["Zorn", 			[	"gm_pl_headgear_beret_blu",	"gm_ge_headgear_beret_un", "G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk", "gm_flashlightp2_brk_akkhandguard_dino"],	{[]}	]],
-	["76561198090236234", 	["Recon", 			[	"gm_flashlightp2_brk_akkhandguard_dino"				 ],	{[]}	]],
+	["76561198090236234", 	["Recon", 			[	"gm_flashlightp2_brk_akkhandguard_dino",		"gm_rv_ris_blk",	"gm_hk512_ris_wud"			 ],	{[]}	]],
 	["76561198147307775", 	["Clone", 			[	"gm_pl_headgear_beret_blu",	"gm_ge_headgear_beret_un"],	{[]}	]] 	
 ];
 
