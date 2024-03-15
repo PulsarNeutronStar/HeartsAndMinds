@@ -46,7 +46,7 @@ if (missionNamespace getVariable ['cvo_al_cond_2', true]) then {
             missionNamespace setVariable ['cvo_al_cond_2', false, true];
         },			// Code executed on completion
         {},																		// Code executed on interrupted
-        [DZ_2,LZ, airlift_heli_1_grp],															// Arguments passed to the scripts as _this # 3
+        [DZ_2,LZ_1, airlift_heli_2_grp],															// Arguments passed to the scripts as _this # 3
         6,																		// Action duration in seconds
         0,																		// Priority
         true,																	// Remove on completion
