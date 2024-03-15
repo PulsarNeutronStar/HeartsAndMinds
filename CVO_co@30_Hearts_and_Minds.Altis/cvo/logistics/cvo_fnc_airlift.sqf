@@ -22,7 +22,9 @@ cvo_fnc_airlift = {
 	* Public: [Yes/No]
 	*/
 
-
+	if (!isServer) exitWith {
+		_this remoteExecCall ["cvo_fnc_airlift", 2];
+	};
 
 	params [
 		[ "_heliCrew",		grpNull,	   [grpNull]			   ],
@@ -48,6 +50,13 @@ cvo_fnc_airlift = {
 
     };
 
+	private _heliObj = vehicle leader _heliCrew;
+
+
+	{	_x setGroupOwner 2;	} forEach [_heliCrew, group driver _cargoObj];
+	{	_x setOwner 2;	} forEach [_cargoObj, _heliObj];
+
+
 	// turn off damage if _protected
 	if (_protected) then {
 		{ _x allowDamage false; } forEach units _heliCrew + [vehicle leader _heliCrew];
@@ -68,7 +77,6 @@ cvo_fnc_airlift = {
 
 
 
-	private _heliObj = vehicle leader _heliCrew;
 	private _heliPos = getPos leader _heliCrew;
 	private _cargoPos = getPos _cargoObj;
 
@@ -98,10 +106,10 @@ cvo_fnc_airlift = {
 		_this # 1 lockCargo true;
 		_this # 1 lockDriver true;
 		{ _this # 1 lockTurret [_x, true]; } forEach allTurrets [_this # 1, true];
-        _this # 1 setVariable ["CVO_Original_Mass", getMass (_this # 1) ];
+        _this # 1 setVariable ["CVO_Original_Mass", getMass (_this # 1), true ];
 		_this # 1 setMass 1000;
 	};
-	[ { (_this # 0 distance _this # 1) < 100 }, _code, [_heliObj, _cargoObj], 600, _code ] call CBA_fnc_waitUntilAndExecute;
+	[ { (_this # 0 distance2D _this # 1) < 100 }, _code, [_heliObj, _cargoObj], 600, _code ] call CBA_fnc_waitUntilAndExecute;
 
 
    	private _code = {
@@ -112,7 +120,7 @@ cvo_fnc_airlift = {
         };
 		_this # 1 setMass (_this # 1 getVariable ["CVO_Original_Mass", 1000] );
 	};
-	[ { (_this # 0 distance _this # 1) < 3 }, _code, [_dropOffPosObj, _cargoObj], 600, _code ] call CBA_fnc_waitUntilAndExecute;
+	[ { (_this # 0 distance2D _this # 1) < 3 }, _code, [_dropOffPosObj, _cargoObj], 600, _code ] call CBA_fnc_waitUntilAndExecute;
 
 
 	_heliObj setFuel 1;
